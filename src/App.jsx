@@ -9,6 +9,7 @@ import Signup from "./routes/Signup";
 import Accaunt from "./routes/Accaunt";
 import CoinPage from './routes/CoinPage'
 import { useEffect, useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -34,6 +35,7 @@ function App() {
           <Route path=":coinId"/>
         </Route>
       </Routes>
+      <Footer/>
     </ThemeProvider>
   );
 }
